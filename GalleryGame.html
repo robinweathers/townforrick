@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initail-scale=0">
+        <title>GUN GAME</title>
+        <link rel="stylesheet" href="mole.css">
+        <script src="mole.js"></script>
+    </head>
+    <body>
+
+        <a href="Tuto.html">RESTART</a>
+
+        <h2 id="score">0</h2>
+        <!--3x3-->
+        <div id="board">
+        </div>
+        <audio id="song">
+            <source src="song.mp3">
+        </audio>
+        <audio id="gun">
+            <source src="shoot.mp3">
+        </audio>
+        <script>
+            window.addEventListener('click', () => {
+                document.getElementById("song").play();
+            });
+        </script>
+    </body>
+</html>
